@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="img/favicon.ico">
+  <title>Lada-Mariia Karpliuk</title>
+</head>
+
+<body>
+  <nav>
+    <a href="#me">Про мене</a>
+    <a href="#educ">Освіта</a>
+    <a href="#interest">Мої хоббі</a>
+    <a href="#works">Мої роботи</a>
+    <a href="#contact">Контакти</a>
+  </nav>
+  <header>
+    <h1>Моя веб-сторінка</h1>
+  </header>
+  <main>
+    <section id="me" class="about">
+      <div class="about-text">
+        <h2>Про мене</h2>
+        <p>Мене звати Лада-Марія. Мені 19 років.</p>
+        <p>Навчаюся в художньому коледжі.</p>
+        <p>Працюю в Дитячій школі народних мистецтв.</p>
+        <p>Власниця інтернет-магазину біжутерії <a
+            href="https://www.instagram.com/kala.merie?igsh=cTdmY2Zmc256NHph">Kala Merie.</a></p>
+        <p>Моя творчість і мистецтво — невід'ємна частина мого життя.</p>
+      </div>
+      <div class="about-content">
+        <img src="/img/me.png" alt="Фото Лади-Марії" class="profile-photo">
+      </div>
+    </section>
+    <section id="educ" class="education">
+      <h2>Освіта</h2>
+      <p>Я навчаюсь на 5 курсі Львівського коледжу декоративного та ужиткового мистецтва ім. І.Труша. Моя спеціальність
+        - ювелірна справа. Там ми вчимось створювати ювелірні прикраси. Також вивчаємо 3D-моделювання.</p>
+    </section>
+
+    <section id="interest" class="hobby">
+      <h2>Мої хоббі</h2>
+      <ul class="icon-list">
+        <li><i class="fas fa-music"></i> Я займаюся танцями high heels. Це стиль, де танцюють на підборах, поєднуючи
+          жіночність і виразні рухи. Він допомагає почуватися впевненіше, розвиває поставу та координацію.</li>
+        <li><i class="fas fa-music"></i> Граю на фортепіано, виконуючи різні мелодії – від класичних до сучасних. Це
+          допомагає
+          розвивати техніку і музичний слух, а також приносить задоволення.</li>
+
+      </ul>
+    </section>
+
+
+    <section id="works" class="work">
+      <h2>Мої роботи</h2>
+      <p>Серед моїх робіт є ювелірні вироби та 3D-моделі ювелірних виробів:</p>
+      <div class="images">
+        <a href="#img1"><img src="/img/image1.png" alt="work"></a>
+        <a href="#img2"><img src="/img/image2.png" alt="work"></a>
+        <a href="#img3"><img src="/img/image3.png" alt="work"></a>
+        <a href="#img4"><img src="/img/image4.png" alt="work"></a>
+        <a href="#img5"><img src="/img/image5.jpg" alt="work"></a>
+      </div>
+
+      <!-- Lightbox модальні вікна -->
+      <div id="img1" class="lightbox">
+        <span class="close" onclick="closeLightbox('img1')">&times;</span>
+        <img src="/img/image1.png" alt="work">
+      </div>
+      <div id="img2" class="lightbox">
+        <span class="close" onclick="closeLightbox('img2')">&times;</span>
+        <img src="/img/image2.png" alt="work">
+      </div>
+      <div id="img3" class="lightbox">
+        <span class="close" onclick="closeLightbox('img3')">&times;</span>
+        <img src="/img/image3.png" alt="work">
+      </div>
+      <div id="img4" class="lightbox">
+        <span class="close" onclick="closeLightbox('img4')">&times;</span>
+        <img src="/img/image4.png" alt="work">
+      </div>
+      <div id="img5" class="lightbox">
+        <span class="close" onclick="closeLightbox('img5')">&times;</span>
+        <img src="/img/image5.jpg" alt="work">
+      </div>
+    </section>
+  </main>
+  <footer id="contact">
+    <div class="footer">
+      <p>Контакти:</p>
+      <p>Email: <a href="mailto:lada.mariya.photo@gmail.com">lada.mariya.photo@gmail.com</a></p>
+      <p>Номер телефону: <a href="tel:+380660172952">+380 66 017 2952</a></p>
+      <div class="socials">
+        <a href="https://www.instagram.com/ladakarpliuk" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+        </a>
+        <a href="https://t.me/ladamaria" target="_blank">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1024px-Telegram_logo.svg.png"
+            alt="Instagram">
+        </a>
+      </div>
+      <p>&copy; 2024 Lada-Mariia Karpliuk</p>
+    </div>
+  </footer>
+
+  <script>
+    function closeLightbox(id) {
+      document.getElementById(id).style.display = 'none';
+      history.pushState("", document.title, window.location.pathname + window.location.search);
+    }
+
+    document.addEventListener('click', function (event) {
+      if (event.target.classList.contains('lightbox')) {
+        event.target.style.display = 'none';
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+    });
+  </script>
+</body>
+
+</html>
